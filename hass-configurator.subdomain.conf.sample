@@ -33,7 +33,7 @@ server {
         #include /config/nginx/authelia-location.conf;
 
         include /config/nginx/proxy.conf;
-        include /config/nginx/resolver.conf
+        include /config/nginx/resolver.conf;
         set $upstream_app hass-configurator;
         set $upstream_port 3218;
         set $upstream_proto http;
